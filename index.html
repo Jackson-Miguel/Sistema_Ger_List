@@ -5,8 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Sistema List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" 
+    crossorigin="anonymous">
 </head>
 <body>
     <h1>Bem-Vindo ao seu Gerenciador de Tarefas</h1>
+    <div id="base">
+        <button id="add" type="button" onclick="validarForm()" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+    </div>
+    <div id="res">
+
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Adicione sua Tarefa</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="index.html" name="Formulario">
+            <label for="title">Título: <input type="text" name="title"></label><br><br>
+            <label for="datei">Data Inicial: <input type="date" name="datei"></label><br><br>
+            <label for="datef">Data Final: <input type="date" name="datef"></label><br><br>
+            <label for="desc">Descrição: <input type="text" name="desc"></label><br><br>
+            <button type="reset" class="btn btn-light" data-bs-dismiss="modal">Limpar</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+            <input type="submit" class="btn btn-success" onclick="validarForm()">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Ver suas Tarefa</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+            <form action="index.html" name="Formulario">
+            <label for="title">Título: <p></p></label><br><br>
+            <label for="datei">Data Inicial: <p></p></label><br><br>
+            <label for="datef">Data Final: <p></p></label><br><br>
+            <label for="desc">Descrição: <p></p></label><br><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        <button type="submit" class="btn btn-success">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" 
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
