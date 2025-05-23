@@ -1,19 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    height: 100vh;
+}
 h1{
     text-align: center;
+    font-family: fantasy;
 }
 #base{
     box-shadow: 3px 3px 3px 0px;
     justify-self: center;
     height: 30vw;
     width: 45vw;
-    border: 1px solid;
+    border: 2px solid;
 }
 #add{
   display: grid;
   justify-self: center;
   place-items: center;
   background-color: white;
-  color: rgb(0, 185, 0);
+  color: #00b900;
   border: 2px solid rgb(0, 185, 0);
   margin-top: 0.3vw;
   width: 40vw;
@@ -24,4 +32,26 @@ h1{
 #add:hover{
     background-color: rgb(0, 185, 0);
     color: rgb(255, 255, 255);
+}
+#lis{
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  place-items: center;
+  border: 2px solid rgb(0, 185, 160);
+  width: 40vw;
+  height: 3vw;
+  padding: 20px;
+}
+#lis p{
+      margin: 0;
+}
+.buttons {
+      display: flex;
+      gap: 10px;
+}
+#SuaLista{
+    margin-left: 1vw;
+    font-family: fantasy;
+    text-decoration: underline;
 }
