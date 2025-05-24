@@ -10,7 +10,7 @@
 <body>
     <h1>Bem-Vindo ao seu Gerenciador de Tarefas</h1>
     <div id="base">
-        <button id="add" type="button" onclick="validarForm()" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+        <button id="add" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
         <hr>
         <p id="SuaLista">Sua Lista</p>
         <div id="lis">
@@ -30,14 +30,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="index.html" name="Formulario">
-            <label for="title">Título: <input type="text" name="title"></label><br><br>
-            <label for="datei">Data Inicial: <input type="date" name="datei"></label><br><br>
-            <label for="datef">Data Final: <input type="date" name="datef"></label><br><br>
-            <label for="desc">Descrição: <input type="text" name="desc"></label><br><br>
+        <form id="Formulario">
+            <label for="title1">Título: <input type="text" id="title"></label><br><br>
+            <label for="datei2">Data Inicial: <input type="date" id="datai"></label><br><br>
+            <label for="datef3">Data Final: <input type="date" id="dataf"></label><br><br>
+            <label for="desc4">Descrição: <input type="text" id="desc"></label><br><br>
             <button type="reset" class="btn btn-light" id="btn_limpar">Limpar</button>
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-            <input type="submit" class="btn btn-success" onclick="validarForm(event)">
+            <button type="submit" class="btn btn-success" id="mand">Enviar</button>
         </form>
       </div>
     </div>
@@ -52,14 +52,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="index.html" name="Formulario">
-            <label for="title">Título: <input type="text" name="title"></label><br><br>
-            <label for="datei">Data Inicial: <input type="date" name="datei"></label><br><br>
-            <label for="datef">Data Final: <input type="date" name="datef"></label><br><br>
-            <label for="desc">Descrição: <input type="text" name="desc"></label><br><br>
+        <form action="index.html" name="Formu">
+            <label for="title_res1">Título: <input type="text" id="title_res" autocomplete="off"></label><br><br>
+            <label for="datei_res1">Data Inicial: <input type="date" id="datai_res"></label><br><br>
+            <label for="datef_res1">Data Final: <input type="date" id="dataf_res"></label><br><br>
+            <label for="desc_res1">Descrição: <input type="text" id="desc_res"></label><br><br>
             <button type="reset" class="btn btn-light" id="btn_limpar">Limpar</button>
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-            <input type="submit" class="btn btn-success" onclick="validarForm(event)">
+            <input type="submit" class="btn btn-success" >
         </form>
       </div>
     </div>
