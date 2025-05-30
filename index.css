@@ -44,10 +44,10 @@ h1{
   height: 3vw;
   padding: 20px;
 }
-.t1, .t2, .t3, .t4 p{
-      margin: 0;
+.t1, .t2, .t3, .t4, p{
+    margin: 0;
 }
-.buttons {
+.buttons{
       display: flex;
       gap: 5px;
 }
@@ -64,6 +64,5 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;      /* Centraliza horizontalmente */
-    justify-content: center;  /* Centraliza verticalmente */
     gap: 25px;
 }
